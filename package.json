@@ -1,7 +1,7 @@
 {
   "name": "@revgaming/token",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "homepage": "https://github.com/estagent/token",
   "description": "token",
   "main": "index.js",
