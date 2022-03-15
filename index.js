@@ -1,3 +1,5 @@
+import {updateConfig} from '@revgaming/helpers'
+
 export default class {
   __secret = null
   cipher = null
@@ -7,9 +9,7 @@ export default class {
 
   constructor(cipher, props = {}) {
     this.cipher = cipher
-    for (let key of Object.keys(props))
-      if (this.config.hasOwnProperty(key)) this.config[key] = props[key]
-      else throw `unknown token config option (${key})`
+    updateConfig(this.config, props)
   }
 
   get secret() {
